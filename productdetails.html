@@ -1,215 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fontawesome/css/all.min.css">
-	 <link rel="stylesheet" href="style.css">
-	 <body>
-	 <div class="container" id="paragraph" >
-	<div class="row bg-light" id="abc">
-
-<div class="col-md-4">
-  <img src="images/i.jpg" alt="..." class=" img-thumbnail pull-left mr-2" width="300"height="1000" id="abc">
-</div>
-<div class="col-md-8 ">
-  <p class="" id="abc">Made In Pakistan High Quality  Affordable Price </p>
-  <hr>
-  <div class="row">
-  <div class="col-md-2">
-  
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-<div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-   
-  
-  </div>
-  
-  <!--<div class="col-md-4">-->
-  <div class="row">
-  <p>color:
-  <div class="col-md-2">
-  <img src="images/d.png"height="10"width="10">
-  </div>
-  
-  <div class="col-md-2">
-  <img src="images/b.png"height="10"width="10">
-  </div>
-   <div class="col-md-2">
-  <img src="images/g.png"height="10"width="10">
-  </div>
-  
-   <div class="col-md-2">
-  <img src="images/r.png"height="10"width="10">
-  </div>
-   <div class="col-md-2">
-  <img src="images/bl.png"height="10"width="10">
-  </div>
-  </p>
-  
-  <!--</div>-->
-  
-  </div>
-  
-    <div class="row">
-  <p>size:
-  <div class="col-md-2">
- <button>xl</button> 
-  </div>
-  
-  <div class="col-md-2">
-   <button>xl</button> 
-  </div>
-   <div class="col-md-2">
-   <button>xl</button> 
-  </div>
-  
-   <div class="col-md-2">
-   <button>xl</button> 
-  </div>
-   <div class="col-md-2">
-   <button>xl</button> 
-  </div>
-  </p>
-  
-  <!--</div>-->
-  
-  </div>
-  
-  
-  <!--hh-->
-<!--<div class="row bg-light" id="bcd">
-<div class="clearfix">
-  <img src="images/i6.jpg" alt="..." class="float-left img-thumbnail pull-left mr-2" width="200"height="1000">
-  
-  </div>
-  <div class="col-md-12 ">
-  <p class="">Made In Pakistan High Quality  Affordable Price </p>
-  <hr>
-  </div>
-  
-  
-  <div class="col-md-3">
-  
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-3">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-3">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-   <div class="col-md-3">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-<div class="col-md-4">
-  <img src="images/i7.jpg" alt="..." class=" img-thumbnail pull-left mr-2" width="300"height="1000" id="bcd">
-</div>
-<div class="col-md-8 ">
-  <p class="" id="bcd">Made In Pakistan High Quality  Affordable Price </p>
-  <hr>
-  <div class="row">
-  <div class="col-md-2">
-  
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
- <div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-<div class="col-md-2">
-   
- <p>Tk.2000</p>
-  <p>Tk.2000</p>
-
-</div>
-   
-  
-  </div>
-  
- 
-
-</div>
-</div>-->
-
-
-
-
-
-</div>
-</div>
-<div class="row">
-<button type="button" id="GoalsBtn">product details</button>				
-<p id="paragraph"></p>
-					
-</div>
-
-</div>
-
-<script>
-  function getParams() {
-    var idx = document.URL.indexOf("?");
-    var params = new Array();
-    if (idx != -1) {
-      var pairs = document.URL.substring(
-        idx + 1,
-        document.URL.length
-      ).split("&");
-      for (var i = 0; i < pairs.length; i++) {
-        nameVal = pairs[i].split("=");
-        params[nameVal[0]] = nameVal[1];
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      function getParams() {
+        var idx = document.URL.indexOf("?");
+        var params = new Array();
+        if (idx != -1) {
+          var pairs = document.URL.substring(
+            idx + 1,
+            document.URL.length
+          ).split("&");
+          for (var i = 0; i < pairs.length; i++) {
+            nameVal = pairs[i].split("=");
+            params[nameVal[0]] = nameVal[1];
+          }
+        }
+        return params;
       }
-    }
-    return params;
-  }
-  params = getParams();
-  description = unescape(params["description"]);
-  var res = description.split('+').join(' ');
-  document.write("Description = " + res + "<br>");
-</script>
-	  <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-	 </body>
-	 </html>
+      params = getParams();
+      description = unescape(params["description"]);
+      image = unescape(params["image"]);
+      var res = description.split("+").join(" ");
+    </script>
+    <div class="container">
+      <script>
+        document.write("<h1>" + res + "</h1>");
+      </script>
+      <script>
+        document.write('<img src="' + image + '"/>');
+      </script>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
