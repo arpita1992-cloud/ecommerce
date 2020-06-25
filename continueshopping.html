@@ -9,13 +9,12 @@
   </head>
   <body>
     <div class="container">
-      <form method="get" action="productdetails.html">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Top Ranked product</h1>
-          </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Top Ranked product</h1>
         </div>
-        <!-- <div class="row bg-light">
+      </div>
+      <!-- <div class="row bg-light">
           <div class="clearfix">
             <img
               src="images/i6.jpg"
@@ -43,12 +42,13 @@
           </div>
         </div> -->
 
-        <!--<div class="row bg-light m-2">
+      <!--<div class="row bg-light m-2">
 <h1>New Arrivals</h1>
 </div>-->
 
-        <div class="row bg-light">
-          <div class="clearfix">
+      <div class="row bg-light">
+        <div class="clearfix">
+          <form method="get" action="productdetails.html">
             <img
               src="images/2.jpg"
               alt="..."
@@ -71,8 +71,9 @@
             />
 
             <input type="submit" size="10" />
-          </div>
-          <!-- <div class="clearfix">
+          </form>
+        </div>
+        <!-- <div class="clearfix">
           <img
             src="images/i2.jpg"
             alt="..."
@@ -124,7 +125,8 @@
           >
         </div>
         <!--a-->
-          <div class="col-md-3">
+        <div class="col-md-3">
+          <form method="get" action="productdetails.html">
             <a href="#" id="abc"
               ><img src="images/i.jpg" alt="..." width="100" height="100"
             /></a>
@@ -132,9 +134,25 @@
               ><p>TK.2000 min</p>
               <p>Min order</p></a
             >
-          </div>
+            <input
+              type="text"
+              name="description"
+              value="description of your product 2"
+              style="display: none;"
+            />
+            <input
+              type="text"
+              name="image"
+              value="images/i.jpg"
+              style="display: none;"
+            />
 
-          <div class="col-md-3">
+            <input type="submit" size="10" />
+          </form>
+        </div>
+
+        <div class="col-md-3">
+          <form method="get" action="productdetails.html">
             <a href="#" id="bcd"
               ><img src="images/i7.jpg" alt="..." width="100" height="100"
             /></a>
@@ -142,10 +160,25 @@
               ><p>TK.2000 min</p>
               <p>Min order</p></a
             >
-          </div>
-          -->
+            <input
+              type="text"
+              name="description"
+              value="description of your product 3"
+              style="display: none;"
+            />
+            <input
+              type="text"
+              name="image"
+              value="images/i7.jpg"
+              style="display: none;"
+            />
+
+            <input type="submit" size="10" />
+          </form>
         </div>
-        <!-- 
+        -->
+      </div>
+      <!-- 
       <div class="row bg-light m-2">
         <div class="col-md-12"><h1>Furniture selection</h1></div>
         <div class="col-md-3">
@@ -186,7 +219,6 @@
           >
         </div>
       </div> -->
-      </form>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
